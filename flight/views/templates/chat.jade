@@ -1,0 +1,21 @@
+.chat(id="{{ chatID }}")
+  header.navbar
+    button.left Back
+    h1.center {{ personName }}
+    figure.avatar.right
+      img(src='images/avatars/mohammed.jpg' alt="user avatar" width="50")
+
+  section.conversations
+    - var count = 20
+    ul.messageList
+      while count--
+        .message.text.you
+          article
+            header
+              h6 You
+            p.message OK
+
+  footer.chatBox
+    form
+      input.yourChat
+      button.send Send

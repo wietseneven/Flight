@@ -1,0 +1,120 @@
+[
+  {"sentence": "Welcome!"},
+
+  {
+    "id": 1,
+    "multiple": true,
+    "sentence": [
+      "Finally, a signal! I’ve been trying to get to an area with phone signal forever!",
+      "Now that I can communicate I need some help, friend!"
+    ],
+    "contentTypes": ["text","text"],
+    "replies": {
+      "1" : {
+        "reply": "I can help!",
+        "goto":  2
+      },
+      "2" : {
+        "reply": "Heck no!",
+        "goto" : 99
+      }
+    }
+  },
+  {
+    "id": 2,
+    "multiple": true,
+    "sentence": [
+      "I’ve been in the rebel controlled areas, where we’re cut off from aid and get regular bombardment.",
+      "AgADBAADsqcxG5s2uwABFMcLQ0uWSBsolo8wAASvDThAhdW0NQdwAgABAg",
+      "There’s a rumor that the international community is helping Bashir to \"control migration\" - can you confirm if it’s true?",
+      "AgADBAADwKcxG5s2uwABoNtJUd1UU7O-ExsZAARtPofKKJOb00sbAAIC"
+    ],
+    "contentTypes": ["text","image","text", "image"],
+    "replies": {
+      "1" : {
+        "reply": "It’s true!",
+        "goto":  3
+      },
+      "2" : {
+        "reply": "I don't know",
+        "goto" : 3
+      }
+
+    }
+  },
+  {
+    "id": 3,
+    "multiple": true,
+    "sentence": [
+      "This is messed up! Support for Bashir means bad news for us. I need to get my family out of here.",
+      "http://nubareports.org/rebel-campaign-disrupts-election-efforts-in-south-kordofan/",
+      "Help me figure out the best route to escape!!",
+      "I have a few choices:",
+      "1. Yida refugee camp, South Sudan",
+      "10.1135973,25.5941191",
+      "2. Khartoum, Sudan, the capital",
+      "15.501501,32.4325101",
+      "3. Stay in Nuba Mountains, South Kordofan, Sudan",
+      "13.1034247,27.6833721"
+    ],
+    "contentTypes": ["text", "text", "text", "text", "text", "location", "text", "location","text", "location"],
+    "replies": {
+      "1" : {
+        "reply": "Yida",
+        "goto" : 4
+      },
+      "2" : {
+        "reply": "Khartoum",
+        "goto" : 5
+      },
+      "3" : {
+        "reply": "Nuba Mountains",
+        "goto" : 6
+      }
+    }
+  },
+  {
+    "id": 4,
+    "multiple": true,
+    "sentence": [
+      "Good call! I'll give it a try! It's a long walk... I also heard that they are moving everybody there. I'll write you when I arrive.",
+      "BAADBAADCAADmza7AAHHTbNwNqbPoAI",
+      "If you have any friends that might be able to help me, please give them my contact: @Kuku_bot"
+    ],
+    "contentTypes": ["text","video"],
+    "replies": {
+      "1" : {
+        "reply": "Restart",
+        "goto" : 1
+      }
+    }
+  },
+  {
+    "id": 5,
+    "multiple": true,
+    "sentence": [
+      "We just got picked up by security services on our way to Khartoum. They are claiming we are SPLM-N rebel members and threatening to take us to court to face charges. You just helped hand us over to the system!"
+    ],
+    "contentTypes": ["text"],
+    "replies": {
+      "1" : {
+        "reply": "Restart",
+        "goto" : 1
+      }
+    }
+  },
+  {
+    "id": 6,
+    "multiple": true,
+    "sentence": [
+      "We stayed and the now bombing increased. We’re alive but we’re dodging bombardment and scraping to get food. I had to leave the area to send this message - pray for us"
+    ],
+    "contentTypes": ["text"],
+    "replies": {
+      "1" : {
+        "reply": "Restart",
+        "goto" : 1
+      }
+    }
+  }
+]

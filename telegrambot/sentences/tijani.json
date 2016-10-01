@@ -1,0 +1,130 @@
+[
+  {"sentence": "Welcome!"},
+
+  {
+    "id": 1,
+    "multiple": true,
+    "sentence": [
+      "Thank God you’re here! I just signed the Doha agreement and they made me the new governor of Darfur.",
+      "http://unamid.unmissions.org/Default.aspx?tabid=11060",
+      "Doha.jpg",
+      "I really don’t know what the heck I’m supposed to do! Help me out!"
+    ],
+    "contentTypes": ["text","text", "image", "text"],
+    "replies": {
+      "1" : {
+        "reply": "What’s the problem?",
+        "goto":  2
+      },
+      "2" : {
+        "reply": "You signed an agreement with Bashir?? pfft, you’re on your own, pal!",
+        "goto" : 99
+      }
+    }
+
+  },
+  {
+    "id": 2,
+    "multiple": true,
+    "sentence": [
+      "I’ve been commissioned to help stop migration from Darfur, but I don’t have the slightest idea where to start!",
+      "https://calaismigrantsolidarity.wordpress.com/2015/12/24/silence-kills-darfur-people-a-call-to-action/",
+      "darfur_map.jpg",
+      "There are an estimated 2 million people displaced in Darfur alone!",
+      "http://sudanreeves.org/2015/01/30/almost-500000-people-were-newly-displaced-in-darfur-in-2014-and-this-year-promises-to-be-worse-2/",
+      "Can you help me with budget allocation?"
+    ],
+    "contentTypes": ["text","text","image","text","text","text"],
+    "replies": {
+      "1" : {
+        "reply": "Let's give it a shot",
+        "goto":  3
+      },
+      "2" : {
+        "reply": "Dude, you're corrupt",
+        "goto" : 99
+      }
+
+    },
+    "image": "support-TRUE.jpg"
+  },
+
+  {
+    "id": 3,
+    "multiple": true,
+    "sentence": [
+      "I have a tiny budget, but also some of that sweet EU money. But I have hungry people in IDPs, clashes between tribes, out of control police, and the list goes on! How should I spend this budget? What’s the priority?",
+      "EUmoney.jpg",
+      "http://europa.eu/rapid/press-release_MEMO-15-6056_en.htm",
+      "I have a few options:",
+      "1. Relief and aid for the camps", "http://www.defenceweb.co.za/index.php?option=com_content&view=article&id=42147:un-urges-more-darfur-aid-access-as-fighting-displaces-34000&catid=52:Human%20Security&Itemid=114",
+      "darfur_aid.jpg",
+      "2. Increase law enforcement budget to control migration", "http://www.sudantribune.com/spip.php?article56993",
+      "sudan_police.jpg",
+      "3. Rehabilitation project for a few villages (conflict resolution & small scale development)", "http://malamdarfur.org/",
+      "darfurdev.jpg"
+    ],
+    "contentTypes": ["text","image", "text", "text", "text", "text", "image", "text", "text", "image", "text", "text", "image"],
+    "replies": {
+      "1" : {
+        "reply": "Relief",
+        "goto":  4
+      },
+      "2" : {
+        "reply": "Law enforcement",
+        "goto" : 5
+      },
+      "3" : {
+        "reply": "Rehabilitation",
+        "goto" : 6
+      }
+    }
+
+  },
+  {
+    "id": 4,
+    "multiple": true,
+    "sentence": [
+      "The aid ran out and these people are on my ass!! Start a kickstarter campaign! Call your rich auntie! do something!",
+      "http://www.dorotidarfur.org/category/darfur-food-shortage/"
+    ],
+    "contentTypes": ["text", "text"],
+    "replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+  },
+  {
+    "id": 5,
+    "multiple": true,
+    "sentence": [
+      "Nice work, Einstein! Now I have militias and paramilitary forces with an expensive taste and an iron fist! If they overthrow me I’m moving into YOUR house!",
+      "RSF.jpg",
+      "https://www.hrw.org/report/2015/09/09/men-no-mercy/rapid-support-forces-attacks-against-civilians-darfur-sudan"
+    ],
+    "contentTypes": ["text","image", "text"],
+    "replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+  },
+  {
+    "id": 6,
+    "multiple": true,
+    "sentence": [
+      "I knew there was something special about you! The rehab project worked wonderfully! (I even scraped a little off the top) But I got the people in the villages on my side and they’re even accepting IDPs from the camps! How would you like a position in my cabinet??",
+      "http://www.huffingtonpost.com/daniel-solomon/as-sudan-revolts-building_b_1643793.html"
+    ],
+    "contentTypes": ["text", "text"],
+    "replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+  }
+]

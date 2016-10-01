@@ -1,0 +1,125 @@
+[
+  {"sentence": "Welcome!"},
+  {
+    "id": 1,
+    "multiple": true,
+    "sentence": [
+      "I just had to flee my home in Darfur. And I don’t know where to go! ",
+      "My country has been at war for years, but I thought my family and I would not be targeted. I’ve been studying English at university.  In the last few years the violence against my community by Government militias has dramatically increased in the last few years. I found this graph online that shows this:",
+      "AgADBAADracxG5s2uwABzHho9jHUwF38do8wAASAB3XPfLjtFgptAgABAg",
+      "I’m now stuck outside Al Fashir in an informal IDP camp.",
+      "13.619750,25.354871",
+      "My brother died in the attack and we weren’t even able to find him to bury him. My family has reconnected, and my parents want us to settle here, even though we have nothing and the UN rarely deliver supplies. I want to fight back, but the government’s troop, the Rapid Support Force is too powerful. Please see this video and article about what they have done: http://nubareports.org/via-3ayin-sudans-new-shock-troops/ ",
+      "I feel like this war will never end, it’ll just be repeated over and over again. And it’s not just in Darfur, it’s all across the country. The organization I used to work for made this map:",
+      "AgADBAADrKcxG5s2uwABRty6q2uGj2UJd48wAATDI3O5AkocBGxsAgABAg",
+
+     "I just don’t know what to do!",
+
+     "I’ve heard there is working Europe, and now is the chance to go. Anything is better than this. ",
+
+     "What do you think? Should I go or stay?"
+  ],
+    "contentTypes": ["text","text","image","text","location","text","text","image","text","text","text"],
+    "replies": {
+      "1" : {
+        "reply": "Go!",
+        "goto":  2
+      },
+      "2" : {
+        "reply": "Stay",
+        "goto" : 3
+      }
+    }
+  },
+  {
+    "id": 2,
+    "multiple": true,
+    "sentence": [
+
+      "I think so too. I really want to go before the government starts to crack down. First they attack us and soon they will be arrested us for trying to leave. I read that the EU is giving our government hundreds of millions to stop migration. Check out this article.",
+
+      "AgADBAADuqcxG5s2uwABPfDDYBlene-5QhsZAAThjF483l3RAAFdHAACAg",
+
+      "I wish the EU would help us find peace, and help all the displaced people return to their homes. Then we wouldn’t have to leave. Giving Bashir money will just make everything here worse for us.",
+
+      "Maybe you could write your EU representative to ask about this?",
+
+      "Ok, thanks again for your advice, I’m going to talk to my uncle in Al Fashar to see if he can loan me money.",
+
+      "Check out this map a friend made for me . Would you go through Libya, or Egypt?",
+
+      "AgADBAADu6cxG5s2uwABlG4PdDHUDhXq0BwZAASA64yHzgunxAszAAIC"
+
+
+    ],
+    "contentTypes": ["text","image","text","text","text", "text","image"],
+    "replies": {
+      "1" : {
+        "reply": "Egypt",
+        "goto":  4
+      },
+      "2" : {
+        "reply": "Libya",
+        "goto" : 5
+      }
+    }
+  },
+  {
+    "id": 3,
+    "multiple": true,
+    "sentence": [
+      "Really, I know Europe is not easy, but at least it’s safe.",
+      "Oh wait, something is happening at the gate of the camp.",
+      "The RSF has come back! I got to go! Thanks for your help, please let me know if you have any friends that might be able to give me more advice. Bye!",
+      "BQADBAADBwADmza7AAEa01o4NX3MOwI"
+    ],
+    "contentTypes": ["text","text","text","audio"],
+    "replies": {
+      "1": {
+        "reply": "yes",
+        "goto": 20
+      },
+      "2": {
+        "reply": "no",
+        "goto": 10
+      }
+    }
+  },
+  {
+    "id": 4,
+    "multiple": true,
+    "sentence": [
+
+      "My cousin went through Egypt, do you know there is over 3 million Sudanese living in Egypt, most are refugees. But it’s also dangerous: Watch this:",
+
+      "https://www.youtube.com/watch?v=Y6uIkZBitZs",
+
+      "Alright I have to run. Tell your family hi, it was great to talk, I need to get ready for my trip, it’s been a hard couple weeks, but I’m excited for possibilities. ",
+
+      "I’ll write you in a few weeks when I’m in Egypt!"
+
+    ],
+    "contentTypes": ["text","text","text","text"],
+	"replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+
+  },
+  {
+    "id": 5,
+    "multiple": true,
+    "sentence": [
+      "Yeah, it’s the fastest way. But dangerous, did you hear what ISIS did to the Ethiopians: ",
+      "It was horrible. They are even worse than my government. I will just have to be careful.",
+      "Alright I have to run. Tell your family hi, it was great to talk, I need to get ready for my trip, it’s been a hard couple weeks, but I’m excited for possibilities. If you have any friends that might have other advice, please send them my telegram address! "
+    ],
+    "contentTypes": [
+      "text",
+      "text",
+      "text"
+    ]
+  }
+]

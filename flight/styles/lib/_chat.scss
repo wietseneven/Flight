@@ -1,0 +1,112 @@
+.chat {
+  width:      100%;
+  height:     100%;
+  background: #fff;
+  padding:    50px 0 39px;
+}
+.navbar {
+  background:      $chatLight;
+  font-weight:     500;
+  text-align:      center;
+  margin:          0;
+  overflow:        hidden;
+  text-overflow:   ellipsis;
+  white-space:     nowrap;
+  line-height:     44px;
+  position:        fixed;
+  top:             0;
+  width:           100%;
+  border-bottom:   1px solid darken($chatLight, 20%);
+  h1, button {
+    float:      left;
+    text-align: center;
+    font-size:  17px;
+    margin:     0;
+  }
+  button {
+    background: none;
+    border:     none;
+  }
+  .avatar {
+    border-radius: 50%;
+    overflow:      hidden;
+    height:        45px;
+    width:         45px;
+    img {
+      width:  100%;
+      height: 100%;
+    }
+  }
+  .left, .center, .right {
+    position: absolute;
+    top:      0;
+    bottom:   0;
+    margin:   auto;
+  }
+  .left {
+    left: 0;
+  }
+  .center {
+    left:   0;
+    right:  0;
+    margin: auto;
+    height: 20px;
+  }
+  .right {
+    right: 8px;
+  }
+}
+.conversations {
+  height:   100%;
+  overflow: scroll;
+  .messageList {
+    padding:        20px;
+  }
+  .message {
+    list-style:    none;
+    overflow:      hidden;
+    margin-bottom: 8px;
+    article {
+      padding:       0 8px;
+      border-radius: 3px;
+      min-width:     30%;
+      max-width:     85%;
+    }
+    &.other {
+      article {
+        float:      left;
+        background: $chatLight;
+      }
+    }
+    &.you {
+      article {
+        float:      right;
+        background: $chatBright;
+        color:      #fff;
+      }
+    }
+  }
+}
+.chatBox {
+  position:   fixed;
+  bottom:     0;
+  width:      100%;
+  background: $chatLight;
+  padding:    6px 8px;
+  border-top: 1px solid darken($chatLight, 20%);
+  .yourChat {
+    border-radius: 3px;
+    resize:        none;
+    border:        1px solid darken($chatLight, 10%);
+    height:        26px;
+    float:         left;
+    &:focus {
+      outline: none;
+    }
+  }
+  .send {
+    float:      right;
+    border:     none;
+    background: none;
+  }
+}

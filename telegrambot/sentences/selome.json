@@ -1,0 +1,134 @@
+[
+  {"id": 0, "sentence": "Welcome!", "replies": {"1": "asd","2":"asdf"}},
+
+  {
+    "id": 1,
+    "personification": true,
+    "sentence": "my name is Selome, do you know anything about Eritrea?",
+    "replies": {
+	    "1": {
+		   "reply": "Yes",
+		   "goto": 2
+		},
+		"2": {
+		   "reply": "No",
+		   "goto": 2
+		}
+    }
+
+  },
+  {
+	"id": 2,
+	"multiple": true,
+	"sentence": [
+		"I’ve been in Sudan for now two years, I came here from Eritrea. There are many of us here in the in Shagarab camp.",
+		"I was a student activist – the government in Eritrea made life hard for us, I couldn’t get a job and my future was looking sad. But it’s not so easy here too. ",
+		"I need to decide whether to stay in Sudan or move northwards to North Africa or Europe that’s the route many of my people go. What do you think? "
+	],
+	"replies": {
+	    "1": {
+		   "reply": "Type your name",
+		   "goto": 3
+		}
+    }
+  },
+  {
+    "id": 3,
+    "multiple": true,
+    "sentence": [
+      "Can you help me find the best route to use to get me to Europe and out of here?"
+    ],
+    "contentTypes": ["text","text"],
+    "replies": {
+      "1" : {
+        "reply": "Off course!",
+        "goto":  4
+      },
+      "2" : {
+        "reply": "Just stay",
+        "goto" : 99
+      }
+
+    }
+  },
+
+  {
+    "id": 4,
+    "multiple": true,
+    "sentence": [
+      "There are a few destinations and routes I can take:",
+      "1. Go to Italy through Libya",
+      "EritreaRefugees.jpg",
+      "2. Go to Israel through Egypt",
+      "AgADBAADtKcxG5s2uwABil8xjG2BSJheCx0ZAATmfr_yrDRtmO4KAAIC",
+      "3. Go to South Africa"
+    ],
+    "contentTypes": ["text", "text", "image", "text", "image", "text"],
+    "replies": {
+      "1": {
+        "reply": "Italy",
+        "goto": 5
+      },
+      "2": {
+        "reply": "Israel",
+        "goto": 6
+      },
+      "3" : {
+        "reply": "South Africa",
+        "goto": 7
+      }
+    }
+
+  },
+  {
+    "id": 5,
+    "multiple": true,
+    "sentence": [
+      "I am afraid of that route, but it's direct! Here's what happend to my cousins:",
+      "http://www.telegraph.co.uk/news/worldnews/islamic-state/11655543/86-Eritrean-migrants-kidnapped-by-Isil-in-Libya.html",
+      "AgADBAADuKcxG5s2uwABjNTftAm2cArcyRwZAARaIxk5hk61lgU0AAIC",
+	  "I'm leving tomorrow! I'll text you next week when I'm on my way.",
+	  "If you have any friends that might be able to help me, please give them my contact: @Selome_bot"
+    ],
+    "contentTypes": ["text", "text", "image", "text"],
+    "replies": {
+      "1" : {
+        "reply": "Start again",
+        "goto":  1
+      }
+    }
+
+  },
+  {
+    "id": 6,
+    "multiple": true,
+    "sentence": [
+      "We reached here after a horrendous journey, and we're facing discrimination here. The right-wing is trying to drive us out of the country, but there is some room to stand up for our rights.",
+      "AgADBAADt6cxG5s2uwABbwlLrZIGBnoNXhsZAAQFPd08d3ha1a8aAAIC",
+      "http://www.ibtimes.com/eritreans-israel-protest-refugee-protection-1984640"
+    ],
+    "contentTypes": ["text","image", "text"],
+    "replies": {
+      "1" : {
+        "reply": "Start again",
+        "goto":  1
+      }
+    }
+  },
+  {
+    "id": 7,
+    "multiple": true,
+    "sentence": [
+      "We arrived in Johannesburg, and things are good here. There's been local hostility to us, but it's nothing we cannot manage. Thank you!",
+      "AgADBAADtqcxG5s2uwAB_iYPUNMYKD-lMaIwAAQ7fbCFsEfooSFEAgABAg",
+      "http://mg.co.za/article/2015-06-25-eritreans-stranded-in-hostile-sa"
+    ],
+    "contentTypes": ["text", "image", "text"],
+    "replies": {
+      "1" : {
+        "reply": "Start again",
+        "goto":  1
+      }
+    }
+  }
+]

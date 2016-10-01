@@ -1,0 +1,81 @@
+[
+  {"sentence": "Welcome!"},
+
+  {
+    "id": 1,
+    "multiple": true,
+    "sentence": [
+      "Guutentaag! My name is Greta",
+
+      "The EU has given offered 1.8 billion Euros to Sudan and other African countries to stop migrants from coming to Europe.  Last year the EU also launched the Khartoum process to help stop illegal smuggling from the region to Europe.",
+
+      "EUmoney.jpg",
+
+      "Do you think this a good policy?"
+
+    ],
+    "contentTypes": ["text","text", "image", "text"],
+    "replies": {
+      "1" : {
+        "reply": "Yes",
+        "goto":  2
+      },
+      "2" : {
+        "reply": "No",
+        "goto" : 3
+      }
+    }
+
+  },
+  {
+    "id": 2,
+    "multiple": true,
+    "sentence": [
+      "There has been no evidence that the EU’s previous financial incentives to Omar al-Bashir’s government have made any positive impact on the crisis.",
+
+      "nuba_escalation.jpg",
+
+      "All European government participants of the Khartoum Process have policies and political systems that make them directly responsible for creating conditions that produce refugees and migrants in the first place.  It’s a complete contradiction. ",
+
+      "EU leaders seem to be turning a blind eye to this, trying to make cash incentives as quick fix, rather than address the real problems, or provide financial support where it’ really needed.",
+
+      "There also is in the absence of monitoring mechanisms and transparency, these funds will likely disappear without trace, and not actually reach the migrants its meant to help.",
+
+      "AgADBAADvacxG5s2uwAB1lkaXxCXdovLFR0ZAAQbPMLq0YERu2QLAAIC"
+
+    ],
+    "contentTypes": ["text", "image", "text", "text","text", "image"],
+    "replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+  },
+
+  {
+    "id": 3,
+    "multiple": true,
+    "sentence": [
+
+      "I think you are right – that’s what I’ve been thinking and seeing a lot these days.",
+
+      "An Amnesty International report pointed out the so called migration policy is actually just cooperating with leaders involved in human rights for one-sided border control contract dressed up as a cooperation agreement.",
+
+      "amnesty.jpg",
+
+      "The financial support could be better used for rehabilitation efforts.  The EU should also be changing political and economic systems, which cause migration in the first place. ",
+
+      "I want my country to make a difference, but there must be a better way!"
+
+    ],
+    "contentTypes": ["text", "text", "image", "text", "text"],
+    "replies": {
+		"1" : {
+			"reply": "Restart",
+			"goto" : 1
+		}
+	}
+
+  }
+]

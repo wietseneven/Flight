@@ -1,0 +1,85 @@
+$icon-font-path: '../fonts/';
+$chatLight:  #f7f7f8;
+$chatBright: rgb(105,185,76);
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "lib/chat";
+.topSection {
+  background: url('../images/flightBG.png') center top/cover no-repeat;
+}
+
+#mainHead {
+  img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.ctas {
+  text-align:center;
+  padding-top: 120px;
+  h3 {
+    margin-top: 0;
+    font-style: italic;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    margin: 90px 0 100px;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin: 30px;
+      a.btn {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  a.btn {
+    text-align: center;
+    width:100%;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+  }
+}
+.pageText {
+  background: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+.people {
+  background: #fff;
+  color: #000;
+  box-shadow:
+    0 -49px #fff,
+    0 25px #fff;
+  margin-bottom: 50px;
+  h4 {
+    margin-top: 0;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .link {
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    display:block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#flightView {
+  width:  100vw;
+  height: 100vh;
+}
